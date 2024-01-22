@@ -53,11 +53,11 @@ class SearchScreen extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.w400, fontSize: 18),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(0.0),
-                  width: 30.0, // you can adjust the width as you need
-                  child: IconButton(
-                    onPressed: null,
-                    icon: Icon(
+                  padding: EdgeInsets.zero,
+                  width: 15.0, // you can adjust the width as you need
+                  child: Transform.translate(
+                    offset: Offset(-5, 0),
+                    child: Icon(
                       Icons.arrow_right,
                       size: 30,
                       color: Colors.black,
